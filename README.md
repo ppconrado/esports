@@ -1,12 +1,32 @@
-### npm i express
+## BACKEND INIT SETUP
 
-### npm i typescript -D
+```
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.8.3"
+  }
+}
+```
 
 #### npx tsc --init --> tsconfig.json + setup diretorios
 
-### npm i --save @types/express -D
-
-### npm i --save ts-node-dev -D
+## FRONTEND INIT SETUP
 
 ```
 {
