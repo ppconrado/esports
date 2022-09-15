@@ -26,7 +26,7 @@
 
 #### npx tsc --init --> tsconfig.json + setup diretorios
 
-## FRONTEND INIT SETUP
+## FRONTEND INIT SETUP - WEB
 
 ```
 {
@@ -61,29 +61,42 @@ expo init mobile
 
 ```
 {
-  "name": "mobile",
-  "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "expo": "~46.0.9",
-    "expo-status-bar": "~1.4.0",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "react-native": "0.69.5",
-    "react-native-web": "~0.18.7"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.9",
-    "@types/react": "~18.0.14",
-    "@types/react-native": "~0.69.1",
-    "typescript": "~4.3.5"
-  },
-  "private": true
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "autoprefixer": "^10.4.11",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
+    "typescript": "^4.6.4",
+    "vite": "^3.1.0"
+  }
 }
+```
+
+### create "tailwind.config.cjs" and "postcss.config.cjs"
+
+```
+npx tailwindcss init -p
+```
+
+### create web\src\styles\main.css and add:
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 ```
