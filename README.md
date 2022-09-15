@@ -71,6 +71,7 @@ expo init mobile
     "preview": "vite preview"
   },
   "dependencies": {
+    "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
@@ -85,6 +86,7 @@ expo init mobile
     "vite": "^3.1.0"
   }
 }
+
 ```
 
 ### create "tailwind.config.cjs" and "postcss.config.cjs"
