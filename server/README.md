@@ -18,7 +18,7 @@ name:
 yearsPlaying:
 discord:
 weekDays:
-horsStart:
+hourStart:
 hoursEnd:
 useVoiceChannel:
 createdAt:
@@ -37,7 +37,10 @@ Pontos flutuantes
 
 ### -> rotas -> comunicacao com o backend vai ser um caso de uso
 
-1 - listagem de games com contagem de anuncios
-2 - Criacao de anuncio
-3 - Listagem de anuncios por game
-4 - Buscar discord pelo ID do anuncio
+### 1 - listagem de games com contagem de anuncios
+
+### 2 - Criacao de anuncio
+
+### 3 - Listagem de anuncios por game
+
+### 4 - Buscar discord pelo ID do anuncio

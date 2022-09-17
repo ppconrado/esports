@@ -8,15 +8,18 @@
   "main": "src/server.js",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node-dev src/server.ts"
+    "dev": "ts-node-dev --exit-child src/server.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@prisma/client": "^4.3.1",
+    "cors": "^2.8.5",
     "express": "^4.18.1"
   },
   "devDependencies": {
+    "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
     "prisma": "^4.3.1",
     "ts-node-dev": "^2.0.0",
@@ -111,4 +114,18 @@ npx tailwindcss init -p
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+```
+
+```
+npx prisma init -h     (-h shows help prisma command)
+
+npx prisma init --datasource-provider SQLite
+
+npx prisma migrate dev
+```
+
+## Data Validation
+
+```
+zod javascript
 ```
