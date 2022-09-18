@@ -46,7 +46,8 @@
   "dependencies": {
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@radix-ui/react-dialog": "^1.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
@@ -128,4 +129,17 @@ npx prisma migrate dev
 
 ```
 zod javascript
+```
+
+## Radix - Modal Dialog template
+
+```
+https://www.radix-ui.com
+
+```
+
+### Dialog template
+
+```
+https://www.radix-ui.com/docs/primitives/components/dialog
 ```
