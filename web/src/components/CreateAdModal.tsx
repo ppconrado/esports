@@ -14,9 +14,9 @@ interface Game {
 }
 
 export function CreateAdModal() {
-  const [games, setGames] = useState<Game[]>([]);
-  const [weekDays, setWeekDays] = useState<string[]>([]);
-  const [useVoiceChannel, setUseVoiceChannel] = useState(false);
+  const [games, setGames] = useState<Game[]>([]); // lista games
+  const [weekDays, setWeekDays] = useState<string[]>([]); // not a native form
+  const [useVoiceChannel, setUseVoiceChannel] = useState(false); // not a native form
 
   useEffect(() => {
     axios("http://localhost:3333/games").then((response) => {
@@ -24,6 +24,7 @@ export function CreateAdModal() {
     });
   }, []);
 
+  // Para elementos do form nao nativos
   async function handleCreateAd(event: FormEvent) {
     event.preventDefault();
 
@@ -41,7 +42,7 @@ export function CreateAdModal() {
           name: data.name,
           yearsPlaying: Number(data.yearsPlaying),
           discord: data.discord,
-          weekDays: weekDays.map(Number),
+          weekDays: weekDays.map(Number), // array de string convertido para numeros (construtor do JS p numeros)
           hourStart: data.hourStart,
           hourEnd: data.hourEnd,
           useVoiceChannel: useVoiceChannel,
@@ -194,6 +195,7 @@ export function CreateAdModal() {
                 </ToggleGroup.Item>
               </ToggleGroup.Root>
             </div>
+
             <div className="flex flex-col gap-2 flex-1">
               <label htmlFor="hourStart">Qual horário do dia?</label>
               <div className="grid grid-cols-2 gap-2">
