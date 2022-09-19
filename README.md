@@ -132,22 +132,3 @@ npx prisma init --datasource-provider SQLite
 
 npx prisma migrate dev
 ```
-
-## Data Validation
-
-```
-zod javascript
-```
-
-## Radix - Modal Dialog template
-
-```
-https://www.radix-ui.com
-
-```
-
-### Dialog template
-
-```
-https://www.radix-ui.com/docs/primitives/components/dialog
-```
