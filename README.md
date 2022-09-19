@@ -132,3 +132,10 @@ npx prisma init --datasource-provider SQLite
 
 npx prisma migrate dev
 ```
+
+### expo notification
+
+```
+https://docs.expo.dev/push-notifications/sending-notifications
+https://expo.dev/notifications
+```
